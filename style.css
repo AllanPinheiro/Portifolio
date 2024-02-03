@@ -8,8 +8,8 @@
 header {
   background-color: rgb(36, 36, 36);
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   margin: 20px 100px;
   padding: 15px 25px;
   border-radius: 5px;
@@ -19,6 +19,9 @@ header {
   display: flex;
   align-items: center;
   font-size: 30px;
+}
+nav {
+  margin-top: 10px;
 }
 
 nav ul {
@@ -43,14 +46,12 @@ nav a {
   width: 40px;
   height: 5px;
   border-radius: 2px;
-  
 }
 
-
-.modal-body ul{
-display: grid;
-gap: 20px;
-font-weight: bold;
+.modal-body ul {
+  display: grid;
+  gap: 20px;
+  font-weight: bold;
 }
 
 .modal-body a {
@@ -76,7 +77,7 @@ font-weight: bold;
 
 #home {
   background-color: rgb(36, 36, 36);
-  height: 50vh;
+  height: 50vh fit-content;
   margin: 20px 100px;
   display: flex;
   justify-content: space-between;
@@ -85,13 +86,8 @@ font-weight: bold;
   border-radius: 5px;
 }
 
-.textHome {
-  display: grid;
-  gap: 25px;
-}
-
 .textHome h1 {
-  font-size: 50px;
+  font-size: 8vw;
   background: linear-gradient(90deg, rgb(62, 158, 255), rgb(27, 139, 252) 60%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -99,7 +95,7 @@ font-weight: bold;
 }
 
 .textHome p {
-  font-size: 23.5px;
+  font-size: 4vw;
   color: #fff;
 }
 
@@ -119,6 +115,7 @@ font-weight: bold;
   color: #fff;
   text-shadow: #000 1px 1px 2px;
   transition: 200ms;
+  margin-top: 25px;
 }
 
 .textHome button:hover {
@@ -147,11 +144,17 @@ font-weight: bold;
   #home {
     margin: 20px 25px;
   }
+  .textHome p {
+    font-size: 5vw;
+  }
 }
 
 @media screen and (max-width: 460px) {
   .textHome h1 {
     font-size: 9.8vw;
+  }
+  .textHome p {
+    font-size: 5vw;
   }
 }
 
@@ -159,11 +162,17 @@ font-weight: bold;
   .textHome h1 {
     font-size: 9.4vw;
   }
+  .textHome p {
+    font-size: 5vw;
+  }
 }
 
 @media screen and (max-width: 320px) {
   .textHome {
     margin-left: -10px;
+  }
+  .textHome p {
+    font-size: 5vw;
   }
 }
 
@@ -272,7 +281,6 @@ font-weight: bold;
 #projetos h2 {
   font-size: 40px;
 }
-
 
 @media screen and (max-width: 980px) {
   #projetos {
